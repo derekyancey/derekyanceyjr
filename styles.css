@@ -188,3 +188,4 @@ footer { padding: 28px 0; font: 400 12px var(--mono); color: var(--muted); }
   .nav .logo img { height: 15px; }
   .nav nav { font-size: 10px; gap: 8px; flex-wrap: nowrap; }
 }
+.facts { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }

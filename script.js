@@ -49,7 +49,6 @@ if ($('#project')) {
     </div>
     <div class="hero-shot"><img src="${shots(p)}/thumb.png" alt="${esc(p.title)} homepage"></div>
     <dl class="facts">
-      <div><dt>My role</dt><dd>${p.role.map(esc).join(' · ')}</dd></div>
       <div><dt>Live site</dt><dd>${p.url ? `<a href="${p.url}" target="_blank" rel="noopener">${esc(p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>` : 'No longer live'}</dd></div>
       <div><dt>${p.fullPage === false ? 'Screens' : 'Full page'}</dt><dd>${p.fullPage === false ? `${p.sections} screenshots` : `<a href="${shots(p)}/full-page.png" target="_blank">Open full-page PNG ↗</a>`}</dd></div>
     </dl>
@@ -79,7 +78,6 @@ if ($('#film-page')) {
     </div>
     ${vids.length ? `<div class="players">${vids.map(player).join('')}</div>` : ''}
     <dl class="facts">
-      <div><dt>My role</dt><dd>${f.role.map(esc).join(' · ')}</dd></div>
       <div><dt>Type</dt><dd>${esc(f.kind)}</dd></div>
       <div><dt>Also on</dt><dd><a href="${NOVA_BASE}${f.id}" target="_blank" rel="noopener">NOVA ↗</a></dd></div>
     </dl>
