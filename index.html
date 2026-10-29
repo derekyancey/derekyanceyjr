@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Derek Yancey Jr. — Portfolio</title>
+  <meta name="description" content="Derek Yancey Jr. — design, marketing and film. Selected projects, brands and original typefaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="top">
+    <h1 class="sr-only">Derek Yancey: design, marketing and film</h1>
+
+    <section class="reel dark" aria-label="Showreel">
+      <video autoplay muted loop playsinline preload="auto" poster="assets/film/reel-poster.jpg">
+        <source src="assets/film/reel.mp4" type="video/mp4">
+      </video>
+      <div class="reel-ui">
+        <div class="wrap wide">
+          <a class="reel-logo" href="#top" aria-label="Derek Yancey"><img src="assets/logo/derek-yancey-white.svg" alt="Derek Yancey"></a>
+          <nav class="reel-nav" aria-label="Sections">
+            <span>Derek Yancey Jr. /</span>
+            <a href="#video">Video</a><i>|</i><a href="#design">Design</a><i>|</i><a href="#web">Web</a><i>|</i><a href="#type">Type</a><i>|</i><a href="#about">About</a><i>|</i><a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <div class="wrap wide">
+        <div class="section-head"><h2>Video</h2></div>
+        <div class="tiles" id="video-grid"></div>
+      </div>
+    </section>
+
+    <section id="design" class="section dark">
+      <div class="wrap wide">
+        <div class="section-head"><h2>Design</h2></div>
+        <div class="tiles" id="design-grid"></div>
+      </div>
+    </section>
+
+    <section id="web" class="section">
+      <div class="wrap wide">
+        <div class="section-head"><h2>Web</h2></div>
+        <div class="tiles" id="web-grid"></div>
+      </div>
+    </section>
+
+    <section id="type" class="section dark">
+      <div class="wrap">
+        <div class="section-head"><h2>Typefaces</h2><a class="label" href="https://moonbear.shop/collections/fonts">moonbear.shop/collections/fonts ↗</a></div>
+        <p class="lede">Fonts I drew myself for the Moonbear brand, including the custom typeface behind the Moonbear logo.</p>
+        <div class="type-grid" id="type-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>About</h2></div>
+        <div class="about">
+          <div>
+            <p>I'm Derek Yancey Jr. I design brands and websites, write the words that go on them and cut the videos that sell them.</p>
+            <p>I studied film and television at Regent University and started as a staff director in Virginia Beach, shooting and editing music videos and branded campaigns.</p>
+            <p>In 2019 I started Moonbear. It makes plugins, title templates, LUTs and typefaces for editors. I've launched more than 40 products there with no sales team, and teams at Adidas, Warner Music Group, Bulgari and Vice use them. The typefaces on this page came from it.</p>
+            <p>Since then I've split my time between my own brand and in-house roles. At Chimney Cricket I ran e-commerce and online revenue grew 35% behind a site redesign. At a metabolic health group in Sarasota I started as the video and social manager and ended up running marketing.</p>
+            <p>I'm based in Lakewood Ranch, Florida. The full work history is on my <a href="https://www.linkedin.com/in/derekyanceyjr">LinkedIn</a> and my <a href="https://itsnova.com/derekyancey">NOVA page</a>.</p>
+          </div>
+          <ul class="list">
+            <li>Web design</li>
+            <li>Brand narrative</li>
+            <li>Copywriting</li>
+            <li>Video editing and direction</li>
+            <li>Type design</li>
+            <li>Shopify stores</li>
+            <li>Marketing and growth</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact dark">
+      <div class="wrap">
+        <div class="section-head"><h2>Contact</h2></div>
+        <a class="big" href="mailto:dyanceyjr@gmail.com">dyanceyjr@gmail.com</a>
+        <div class="links">
+          <a href="https://moonbear.shop">Moonbear ↗</a>
+          <a href="#">Instagram ↗</a>
+          <a href="https://www.linkedin.com/in/derekyanceyjr">LinkedIn ↗</a>
+          <a href="https://itsnova.com/derekyancey">NOVA ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© <span id="year"></span> Derek Yancey Jr.</div></footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
