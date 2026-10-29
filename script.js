@@ -16,7 +16,9 @@ if ($('#web-grid')) {
 
   const filmHref = (f) => (FILM_VIDEOS[f.slug] ? { href: `film.html?f=${f.slug}` } : { href: `${NOVA_BASE}${f.id}`, ext: true });
   fill('#video-grid', FILMS.filter((f) => f.slug !== 'lunar-studio').map((f) => ({ ...filmHref(f), img: `assets/film/${f.slug}.webp`, alt: `${f.title} thumbnail`, title: f.title, label: f.kind })));
-  fill('#web-grid', PROJECTS.map((p) => ({ href: `project.html?p=${p.slug}`, img: `${shots(p)}/thumb.png`, alt: `${p.title} homepage`, title: p.title, label: p.kind })));
+  fill('#web-grid', PROJECTS.filter((p) => !p.group).map((p) => ({ href: `project.html?p=${p.slug}`, img: `${shots(p)}/thumb.png`, alt: `${p.title} homepage`, title: p.title, label: p.kind })));
+
+  fill('#marketing-grid', PROJECTS.filter((p) => p.group === 'marketing').map((p) => ({ href: `project.html?p=${p.slug}`, img: `${shots(p)}/thumb.png`, alt: `${p.title} case study`, title: p.title, label: 'Case study' })));
 
   const lunar = FILMS.find((f) => f.slug === 'lunar-studio');
   fill('#design-grid', [
@@ -43,14 +45,14 @@ if ($('#project')) {
   }).join('');
   $('#project').innerHTML = `
     <div class="p-head">
-      <a class="back" href="index.html#web">← All work</a>
+      <a class="back" href="index.html#${p.group || 'web'}">← All ${p.group || 'web'}</a>
       <h1>${esc(p.title)}</h1>
       <span class="label">${esc(p.kind)}</span>
     </div>
     <div class="hero-shot"><img src="${shots(p)}/thumb.png" alt="${esc(p.title)} homepage"></div>
     <dl class="facts">
-      <div><dt>Live site</dt><dd>${p.url ? `<a href="${p.url}" target="_blank" rel="noopener">${esc(p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>` : 'No longer live'}</dd></div>
-      <div><dt>${p.fullPage === false ? 'Screens' : 'Full page'}</dt><dd>${p.fullPage === false ? `${p.sections} screenshots` : `<a href="${shots(p)}/full-page.png" target="_blank">Open full-page PNG ↗</a>`}</dd></div>
+      ${p.meta ? p.meta.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('') : `<div><dt>Live site</dt><dd>${p.url ? `<a href="${p.url}" target="_blank" rel="noopener">${esc(p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>` : 'No longer live'}</dd></div>
+      <div><dt>${p.fullPage === false ? 'Screens' : 'Full page'}</dt><dd>${p.fullPage === false ? `${p.sections} screenshots` : `<a href="${shots(p)}/full-page.png" target="_blank">Open full-page PNG ↗</a>`}</dd></div>`}
     </dl>
     <section class="writeup">
       <div>${p.writeup.map((t) => `<p>${esc(t)}</p>`).join('')}</div>

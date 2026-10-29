@@ -278,3 +278,32 @@ window.TAGS = {
   'shotclub-social': [['Social & ads', 'Video'], ['Sports & Fitness']],
   'lunar-studio': [['Branding'], []],
 };
+
+// Case study: Covenant Metabolic Specialists (facts from MASTER-FACTS.md; no tenure length for the promotion by rule)
+PROJECTS.push({
+  slug: 'covenant-metabolic',
+  title: 'Covenant Metabolic Specialists',
+  url: null,
+  kind: 'Healthcare · Marketing + brand',
+  group: 'marketing',
+  role: ['Video & social media manager', 'Head of marketing'],
+  sections: 6,
+  meta: [['Client', 'Covenant Metabolic Specialists'], ['Where', 'Sarasota, FL · three locations'], ['When', 'Apr 2025 – Jul 2026']],
+  summary: 'Built the content channel from zero, then ran all of marketing for a metabolic and liver health group.',
+  writeup: [
+    'Covenant Metabolic Specialists is a metabolic and liver health group in Sarasota with three locations. I joined in April 2025 as the video and social media manager. They hired me to build the content channel from zero. I was promoted to head of marketing and stayed until July 2026.',
+    'I built the content calendar and a brief-to-publish workflow in Monday.com. The team shipped about 30 assets a month across Instagram, TikTok, YouTube, Facebook and LinkedIn. Organic search went from nothing to more than a million impressions in eight months.',
+    'Everything ran under medical rules. Every asset cleared HIPAA, medical claims and FTC review, and I was the last gate before anything went live.',
+    'I owned the monthly marketing budget, which ran over $50K, and the forecast the executive team planned around. Reporting went out weekly from Looker Studio on first-party conversion data. FINN Partners was our PR agency. I ran Google Ads and was the agency contact for SEO content and blog work.',
+  ],
+  did: [
+    'Built the content channel from zero as video and social media manager',
+    'Promoted to head of marketing and led 13 employees',
+    'Ran a brief-to-publish workflow in Monday.com: about 30 assets a month across five channels',
+    'Was the last gate: every asset cleared HIPAA, medical claims and FTC review',
+    'Owned the $50K+ monthly budget and the forecast leadership planned around',
+    'Managed Google Ads and the SEO and blog work, with FINN Partners on PR',
+    'Improved the Google Business Profile and the in-person experience: reviews doubled across all three locations',
+    'Reported weekly in Looker Studio on first-party conversion data',
+  ],
+});
