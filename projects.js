@@ -315,3 +315,65 @@ PROJECTS.push({
     'Reported weekly in Looker Studio on first-party conversion data',
   ],
 });
+
+// ShotClubAI and CreativePass: built by Derek (product, logo, site/app, videos, marketing). Facts from resumé + public pages.
+PROJECTS.push({
+  slug: 'shotclubai',
+  title: 'ShotClubAI',
+  url: 'https://www.shotclubai.com/pricing',
+  kind: 'SaaS · Stock imagery library',
+  role: ['Product', 'Web design', 'Logo', 'Video', 'Marketing'],
+  sections: 4,
+  summary: 'A subscription library of AI-generated stock imagery. I built the product, the site, the logo, the videos and the marketing.',
+  writeup: [
+    'ShotClubAI is a members-only library of AI-generated stock imagery. Every image comes in every aspect ratio with a commercial license, behind one subscription. I developed the product and ran every part of it: the site, the logo, the videos and the marketing.',
+    'I built the site as a full-stack app in React and Tailwind, with Supabase and PostgreSQL behind it. It has sign-in, a database schema built to scale, a CMS for adding collections and a production deployment on Vercel.',
+    'I kept the pricing page plain. Three plans at $20, $30 and $50 a month, a three-step path from choosing a plan to downloading, and the license terms one click away.',
+    'I also made the launch campaign and the social content for it. Both are on this site under Video.',
+  ],
+  did: [
+    'Developed the product and its pricing',
+    'Designed and built the site in React, Tailwind, Supabase and PostgreSQL',
+    'Built sign-in, a scalable schema and a CMS',
+    'Deployed to production on Vercel',
+    'Designed the ShotClub logo',
+    'Directed and edited the launch campaign and the social videos',
+    'Ran the marketing strategy',
+  ],
+  logo: {
+    src: 'assets/logo/shotclubai.png', bg: '#ffffff',
+    blurb: 'I designed the ShotClub logo. It is a hand-lettered script wordmark with a small "AI" set beside it, and a black square version of the mark for the app icon and the favicon. The script gives a stock library a point of view, and it stays legible at 22 pixels in the footer.',
+  },
+});
+
+PROJECTS.push({
+  slug: 'creativepass',
+  title: 'CreativePass',
+  url: 'https://apps.apple.com/us/app/creativepass/id6758952132',
+  kind: 'iOS app · Photo & video',
+  group: 'app',
+  phones: true,
+  ext: 'jpg',
+  role: ['Product', 'iOS development', 'Interface design', 'Logo', 'Video', 'Marketing'],
+  sections: 6,
+  meta: [['Platform', 'iPhone and iPad'], ['Built with', 'Swift and SwiftUI'], ['On the App Store', 'CreativePass ↗', 'https://apps.apple.com/us/app/creativepass/id6758952132']],
+  summary: 'A free iPhone and iPad app for photo and video color. I built the app, the logo, the videos and the marketing.',
+  writeup: [
+    'CreativePass is a free iPhone and iPad app for photographers and filmmakers. It puts a pro camera, a teleprompter and a LUT editor in one place. It is on the App Store with an optional Pro subscription, and I developed it from the first sketch.',
+    'I built it in Swift and SwiftUI. The camera previews a LUT live and has manual controls and 4K video. The teleprompter listens to your voice and scrolls as you speak, so you can read a script and keep your eyes on the lens.',
+    'On the editing side there is a node-based color editor, real-time scopes and more than 100 included LUTs. You can import your own, favorite them and fine-tune each look. There are also glow and film halation effects, and text, overlays and frames for thumbnails and social graphics.',
+    'I designed the logo and the interface, made the videos and ran the marketing.',
+  ],
+  did: [
+    'Built the app in Swift and SwiftUI and shipped it on the App Store',
+    'Designed the interface and the icon',
+    'Built a pro camera with live LUT preview and a speech-recognition teleprompter',
+    'Built a node-based color editor with real-time scopes',
+    'Added LUT import, 100+ included LUTs and video export for social platforms',
+    'Made the videos and ran the marketing strategy',
+  ],
+  logo: {
+    src: 'assets/logo/creativepass.png', bg: '#ffffff',
+    blurb: 'I designed the CreativePass icon. A white "C" on black with one blue dot, so it reads as a tool and stays calm next to the colorful work people make inside it.',
+  },
+});
