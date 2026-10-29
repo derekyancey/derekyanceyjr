@@ -189,3 +189,10 @@ footer { padding: 28px 0; font: 400 12px var(--mono); color: var(--muted); }
   .nav nav { font-size: 10px; gap: 8px; flex-wrap: nowrap; }
 }
 .facts { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.brand { padding: 56px 0; border-top: 1px solid var(--line); }
+.brand h2 { font: 400 14px var(--mono); text-transform: uppercase; margin: 0 0 20px; }
+.brand-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.brand-grid figure { margin: 0; }
+.brand-grid figure.wide { grid-column: 1 / -1; }
+.brand-grid img { width: 100%; display: block; border: 1px solid var(--edge); }
+@media (max-width: 720px) { .brand-grid { gap: 10px; } }

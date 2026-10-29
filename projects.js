@@ -41,6 +41,14 @@ window.PROJECTS = [
   },
   {
     slug: 'easy-chimney-supply',
+    brand: [
+      { src: 'assets/brand/easy-chimney/01.jpg', wide: true, alt: 'EasyChimney technician on a ladder sweeping a chimney stack' },
+      { src: 'assets/brand/easy-chimney/02.jpg', alt: 'A hand turning the heat dial on a black stove' },
+      { src: 'assets/brand/easy-chimney/03.jpg', alt: 'Technician checking a lit pellet stove in a navy and white room' },
+      { src: 'assets/brand/easy-chimney/04.jpg', wide: true, alt: 'EasyChimney Supply Co. shop counter with a clerk helping a customer' },
+      { src: 'assets/brand/easy-chimney/05.jpg', wide: true, alt: 'Technician painting a navy brick chimney on a rooftop' },
+      { src: 'assets/brand/easy-chimney/06.jpg', wide: true, alt: 'Technician on a roof at dusk beside a white chimney with a chimney cap' },
+    ],
     title: 'Easy Chimney Supply',
     url: 'https://easychimneysupply.myshopify.com/',
     kind: 'E-commerce · Shopify store',

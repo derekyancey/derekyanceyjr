@@ -60,6 +60,7 @@ if ($('#project')) {
     </section>
     <section class="gallery">${gallery}</section>
     ${p.logo ? `<section class="logo-sec"><div class="logo-box" style="background:${p.logo.bg}"><img src="${p.logo.src}" alt="${esc(p.title)} logo"></div><div><h2>The logo</h2><p>${esc(p.logo.blurb)}</p><a class="back" href="${p.logo.src}" download>Download logo ↓</a></div></section>` : ''}
+    ${p.brand ? `<section class="brand"><h2>Brand imagery</h2><div class="brand-grid">${p.brand.map((b) => `<figure${b.wide ? ' class="wide"' : ''}><img src="${b.src}" alt="${esc(b.alt)}" loading="lazy"></figure>`).join('')}</div></section>` : ''}
     ${p.marks ? `<section class="marks"><h2>Product marks</h2><div class="marks-grid">${p.marks.map((m) => `<figure><img src="${m.src}" alt="${esc(m.label)}"><figcaption>${esc(m.label)}</figcaption></figure>`).join('')}</div><p class="note">Created by the team I led.</p></section>` : ''}
     <div class="next"><a href="project.html?p=${prev.slug}">← ${esc(prev.title)}</a><a href="project.html?p=${next.slug}">${esc(next.title)} →</a></div>`;
 }
