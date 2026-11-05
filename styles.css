@@ -198,3 +198,4 @@ footer { padding: 28px 0; font: 400 12px var(--mono); color: var(--muted); }
 @media (max-width: 720px) { .brand-grid { gap: 10px; } }
 .gallery.phones { grid-template-columns: repeat(3, 1fr); gap: 28px 24px; }
 @media (max-width: 720px) { .gallery.phones { grid-template-columns: repeat(2, 1fr); gap: 20px 10px; } }
+.gal-title { grid-column: 1 / -1; font: 400 14px var(--mono); text-transform: uppercase; margin: 24px 0 -8px; padding-top: 32px; border-top: 1px solid var(--line); }

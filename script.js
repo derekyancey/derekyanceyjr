@@ -53,7 +53,7 @@ if ($('#project')) {
     </div>
     <div class="hero-shot"><img src="${shots(p)}/thumb.png" alt="${esc(p.title)} homepage"></div>
     <dl class="facts">
-      ${p.meta ? p.meta.map(([k, v, h]) => `<div><dt>${esc(k)}</dt><dd>${h ? `<a href="${h}" target="_blank" rel="noopener">${esc(v)}</a>` : esc(v)}</dd></div>`).join('') : `<div><dt>Live site</dt><dd>${p.url ? `<a href="${p.url}" target="_blank" rel="noopener">${esc(p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>` : 'No longer live'}</dd></div>
+      ${p.meta ? p.meta.map(([k, v, h]) => `<div><dt>${esc(k)}</dt><dd>${h ? `<a href="${h}"${/^https?:/.test(h) ? ' target="_blank" rel="noopener"' : ''}>${esc(v)}</a>` : esc(v)}</dd></div>`).join('') : `<div><dt>Live site</dt><dd>${p.url ? `<a href="${p.url}" target="_blank" rel="noopener">${esc(p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>` : 'No longer live'}</dd></div>
       <div><dt>${p.fullPage === false ? 'Screens' : 'Full page'}</dt><dd>${p.fullPage === false ? `${p.sections} screenshots` : `<a href="${shots(p)}/full-page.png" target="_blank">Open full-page PNG ↗</a>`}</dd></div>`}
     </dl>
     <section class="writeup">
@@ -61,6 +61,7 @@ if ($('#project')) {
       <div><h2>What I did</h2><ul class="list">${p.did.map((d) => `<li>${esc(d)}</li>`).join('')}</ul></div>
     </section>
     <section class="gallery${p.phones ? ' phones' : ''}">${gallery}</section>
+    ${p.extra ? `<section class="gallery extra${p.extra.phones ? ' phones' : ''}"><h2 class="gal-title">${esc(p.extra.title)}</h2>${(p.extra.files || Array.from({ length: p.extra.n }, (_, k) => `${p.slug}/${p.extra.prefix}-${String(k + 1).padStart(2, '0')}.jpg`)).map((f, k, a) => `<figure><img src="assets/screenshots/${f}" alt="${esc(p.title)} ${esc(p.extra.title)} ${k + 1}" loading="lazy"><figcaption>${String(k + 1).padStart(2, '0')} / ${String(a.length).padStart(2, '0')}</figcaption></figure>`).join('')}</section>` : ''}
     ${p.logo ? `<section class="logo-sec"><div class="logo-box" style="background:${p.logo.bg}"><img src="${p.logo.src}" alt="${esc(p.title)} logo"></div><div><h2>The logo</h2><p>${esc(p.logo.blurb)}</p><a class="back" href="${p.logo.src}" download>Download logo ↓</a></div></section>` : ''}
     ${p.brand ? `<section class="brand"><h2>Brand imagery</h2><div class="brand-grid">${p.brand.map((b) => `<figure${b.wide ? ' class="wide"' : ''}><img src="${b.src}" alt="${esc(b.alt)}" loading="lazy"></figure>`).join('')}</div></section>` : ''}
     ${p.marks ? `<section class="marks"><h2>Product marks</h2><div class="marks-grid">${p.marks.map((m) => `<figure><img src="${m.src}" alt="${esc(m.label)}"><figcaption>${esc(m.label)}</figcaption></figure>`).join('')}</div><p class="note">Created by the team I led.</p></section>` : ''}

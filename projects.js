@@ -287,31 +287,35 @@ window.TAGS = {
   'lunar-studio': [['Branding'], []],
 };
 
-// Case study: Covenant Metabolic Specialists (facts from MASTER-FACTS.md; no tenure length for the promotion by rule)
+// Case study: Covenant Metabolic Specialists (facts from MASTER-FACTS.md and Derek; no tenure length for the promotion by rule)
 PROJECTS.push({
   slug: 'covenant-metabolic',
+  extra: { title: 'From the feed', prefix: 'frames', n: 6, phones: true },
   title: 'Covenant Metabolic Specialists',
   url: null,
   kind: 'Healthcare · Marketing + brand',
   group: 'marketing',
   role: ['Video & social media manager', 'Head of marketing'],
-  sections: 6,
+  sections: 7,
   meta: [['Client', 'Covenant Metabolic Specialists'], ['Where', 'Sarasota, FL · three locations'], ['When', 'Apr 2025 – Jul 2026']],
-  summary: 'Built the content channel from zero, then ran all of marketing for a metabolic and liver health group.',
+  summary: 'Built the content channel from zero, then ran all of marketing, paid and reviews for a metabolic and liver health group.',
   writeup: [
     'Covenant Metabolic Specialists is a metabolic and liver health group in Sarasota with three locations. I joined in April 2025 as the video and social media manager. They hired me to build the content channel from zero. I was promoted to head of marketing and stayed until July 2026.',
-    'I built the content calendar and a brief-to-publish workflow in Monday.com. The team shipped about 30 assets a month across Instagram, TikTok, YouTube, Facebook and LinkedIn. Organic search went from nothing to more than a million impressions in eight months.',
+    'I built the content calendar and a brief-to-publish workflow in Monday.com. The team shipped about 30 assets a month across Instagram, TikTok, YouTube, Facebook and LinkedIn. Search impressions passed one million in three months, with the site ranking against competing clinics.',
+    'Paid ran on Google Ads, LinkedIn ads and Facebook ads, and I managed all three. I was also the agency contact for SEO content and blog work.',
+    'I took on Google reviews as an operations problem as much as a marketing one. I looked at how each of the three locations collected reviews and how patients were encouraged to leave one, both in the office and in our marketing. Then I changed the Google Business Profile experience and the in-person experience together. Reviews doubled across all three locations.',
     'Everything ran under medical rules. Every asset cleared HIPAA, medical claims and FTC review, and I was the last gate before anything went live.',
-    'I owned the monthly marketing budget, which ran over $50K, and the forecast the executive team planned around. Reporting went out weekly from Looker Studio on first-party conversion data. FINN Partners was our PR agency. I ran Google Ads and was the agency contact for SEO content and blog work.',
+    'I owned the monthly marketing budget, which ran over $50K, and the forecast the executive team planned around. Reporting went out weekly from Looker Studio on first-party conversion data. FINN Partners was our PR agency.',
   ],
   did: [
     'Built the content channel from zero as video and social media manager',
     'Promoted to head of marketing and led 13 employees',
     'Ran a brief-to-publish workflow in Monday.com: about 30 assets a month across five channels',
+    'Grew search impressions past 1M in three months, ranking against competing clinics',
+    'Ran Google Ads, LinkedIn ads and Facebook ads',
+    'Looked at how each location collected and encouraged reviews, then fixed the Google Business Profile and in-person experience: reviews doubled across all three locations',
     'Was the last gate: every asset cleared HIPAA, medical claims and FTC review',
     'Owned the $50K+ monthly budget and the forecast leadership planned around',
-    'Managed Google Ads and the SEO and blog work, with FINN Partners on PR',
-    'Improved the Google Business Profile and the in-person experience: reviews doubled across all three locations',
     'Reported weekly in Looker Studio on first-party conversion data',
   ],
 });
@@ -376,4 +380,90 @@ PROJECTS.push({
     src: 'assets/logo/creativepass.png', bg: '#ffffff',
     blurb: 'I designed the CreativePass icon. A white "C" on black with one blue dot, so it reads as a tool and stays calm next to the colorful work people make inside it.',
   },
+});
+
+// Case study: Chimney Cricket (facts from MASTER-FACTS.md; no job title by rule: two titles are live)
+PROJECTS.push({
+  slug: 'chimney-cricket-ecommerce',
+  extra: { title: 'The storefront', files: ['chimney-cricket/section-01.png', 'chimney-cricket/section-02.png', 'chimney-cricket/section-04.png', 'chimney-cricket/section-06.png'] },
+  title: 'Chimney Cricket',
+  url: null,
+  kind: 'E-commerce · Marketing',
+  group: 'marketing',
+  role: ['E-commerce', 'Digital marketing'],
+  sections: 6,
+  meta: [['Company', 'Chimney Cricket'], ['Where', 'Sarasota, FL'], ['When', 'Mar 2024 – Apr 2025'], ['The site', 'See the site design', 'project.html?p=chimney-cricket']],
+  summary: 'Ran e-commerce and digital marketing across the site, Amazon and Walmart.com for a 20,000-product chimney catalog.',
+  writeup: [
+    'Chimney Cricket sells chimney and fireplace parts online from Sarasota. The catalog runs past 20,000 products, and most of the year\'s revenue lands in a few cold months. I ran e-commerce and digital marketing there from March 2024 to April 2025.',
+    'I owned the site and the marketplaces, Amazon and Walmart.com. Listings, order flow and fulfillment all ran through me. I moved fulfillment from two days to same day on roughly 200 to 300 orders a month, and I cut fraudulent orders by 80%.',
+    'I rebuilt the site and the structure behind it: category architecture, product content and internal links, so partner brands showed up in search and paid. Online revenue grew 35% behind the rebuild.',
+    'Paid ran on Google, Meta and TikTok, plus Amazon Ads and Walmart Connect, with lifecycle email alongside. I produced the product, lifestyle and educational content that fed all of it, and I was the agency contact for SEO content and blog work.',
+  ],
+  did: [
+    'Owned the site, Amazon and Walmart.com',
+    'Managed listings, order flow and fulfillment across every channel',
+    'Moved fulfillment from two days to same day',
+    'Cut fraudulent orders by 80%',
+    'Rebuilt the site: online revenue up 35%',
+    'Rebuilt category architecture, product content and internal linking for search and paid',
+    'Ran Google Ads, Meta, TikTok, Amazon Ads, Walmart Connect and lifecycle email',
+    'Produced the product, lifestyle and educational content behind every channel',
+  ],
+});
+
+// Case study: Sovereign Edge Solutions (facts from MASTER-FACTS.md; the $2.5M pipeline figure is unconfirmed so it is not used)
+PROJECTS.push({
+  slug: 'sovereign-edge',
+  title: 'Sovereign Edge Solutions',
+  url: null,
+  kind: 'Fintech SaaS · Product marketing',
+  group: 'marketing',
+  role: ['Product marketing', 'Investor onboarding'],
+  sections: 5,
+  meta: [['Company', 'Sovereign Edge Solutions'], ['Where', 'Remote'], ['When', 'Aug 2018 – Apr 2022']],
+  summary: 'Product marketing for a B2B trading software company: the investor pitch media, the manuals and the onboarding behind a $2M+ raise.',
+  writeup: [
+    'Sovereign Edge Solutions licensed automated trading algorithms as B2B software. The sales cycle was long and consultative, so most of the work was explaining. I joined in August 2018 as a product management intern and was promoted to product marketing manager. I stayed until April 2022.',
+    'I made the media for the investor pitch and the go-to-market narrative behind a raise that closed at more than $2 million.',
+    'Investors had to understand the product before they trusted it. I built the tutorials and manuals they used. Then I onboarded each new investor myself: I created their trading accounts and fixed whatever broke.',
+    'Behind that, I tested trading strategies with the developers and leadership through manual trading, forward tests and backtests. I met regularly with the dev team, the trading team and leadership to line up pricing and licensing terms. I also managed the trading desk vendors and was the main contact for customer support.',
+  ],
+  did: [
+    'Promoted from product management intern to product marketing manager',
+    'Made the investor pitch media and the go-to-market narrative behind a $2M+ raise',
+    'Built the tutorials and manuals investors used to learn the product',
+    'Onboarded new investors: created trading accounts and fixed problems',
+    'Tested trading strategies with developers and leadership: manual trading, forward tests and backtests',
+    'Aligned the dev team, trading team and leadership on pricing and licensing terms',
+    'Managed trading desk vendor relationships',
+    'Was the main contact for customer support',
+  ],
+});
+
+// Case study: Tropic Colour x moonbear.shop licensing deal (facts from MASTER-FACTS.md and Derek; no deal terms are stated)
+PROJECTS.push({
+  slug: 'tropic-colour-licensing',
+  extra: { title: 'From the Tropic Colour library', prefix: 'frames', n: 4 },
+  title: 'Tropic Colour × moonbear.shop',
+  url: null,
+  kind: 'Licensing · Partnership',
+  group: 'marketing',
+  role: ['Partnerships', 'Negotiation', 'Marketing'],
+  sections: 4,
+  meta: [['Partner', 'Tropic Colour'], ['Store', 'moonbear.shop', 'https://moonbear.shop'], ['When', 'Jun 2021 – Mar 2023']],
+  summary: 'Sourced, negotiated and ran a two-year licensing deal between Tropic Colour and moonbear.shop.',
+  writeup: [
+    'From June 2021 to March 2023, moonbear.shop ran a licensing partnership with Tropic Colour. I sourced the deal, negotiated it and ran it for its full term, about two years.',
+    'A licensing deal only works if both sides keep shipping. I ran a joint calendar so launches, promotions and content from both brands landed on the same dates. I reported the revenue split so each side could see what the partnership earned.',
+    'Counting the customers who came through the partnership, Moonbear\'s customer count passed 100,000.',
+    'I did this while running the rest of Moonbear: the products, the marketing and the store.',
+  ],
+  did: [
+    'Sourced the partner',
+    'Negotiated the licensing terms',
+    'Ran the joint launch and promotion calendar for the length of the deal',
+    'Reported the revenue split to both sides',
+    'Grew Moonbear\'s customer base past 100K, counting the partnership',
+  ],
 });
